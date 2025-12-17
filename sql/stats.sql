@@ -1,0 +1,11 @@
+SELECT 'POICategories' AS table_name, 
+COUNT(*) AS row_count FROM POICategories UNION ALL SELECT 'POIs', 
+COUNT(*) FROM POIs UNION ALL SELECT 'Users', 
+COUNT(*) FROM Users UNION ALL SELECT 'SavedLocations',
+ COUNT(*) FROM SavedLocations UNION ALL SELECT 'ScoringProfiles', 
+ COUNT(*) FROM ScoringProfiles UNION ALL SELECT 'ProfileWeights', 
+ COUNT(*) FROM ProfileWeights UNION ALL SELECT 'Routes', 
+ COUNT(*) FROM Routes UNION ALL SELECT 'Trip', 
+ COUNT(*) FROM Trip UNION ALL SELECT 'Stops', 
+ COUNT(*) FROM Stops UNION ALL SELECT 'StopTime', 
+ COUNT(*) FROM StopTime;
